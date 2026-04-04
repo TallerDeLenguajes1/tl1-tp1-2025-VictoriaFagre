@@ -3,12 +3,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void duplicar_numero(int numero) {
-    numero = numero * 2;
+void duplicar_numero(int *numero) {
+    *numero = *numero * 2;
 }
 
 int main() {
-    int valor1;
+    int *valor1;
     int valor2;
     //agregue & a valor1
     printf("Ingrese el primer valor: ");
